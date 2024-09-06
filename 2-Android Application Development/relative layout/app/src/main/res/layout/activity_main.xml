@@ -1,48 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:id="@+id/main"
-    android:background="#FF00FF">
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="#00FF00"
+        android:id="@+id/mainButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_bright"
         android:text="BUTTON"
-        android:textColor="#FFFFFF"
-        tools:ignore="TextContrastCheck" />
+        android:layout_centerInParent="true"/>
+
 
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#000000"
-        android:layout_above="@id/button"
-        android:layout_alignLeft="@id/button" />
+        android:layout_above="@id/mainButton"
+        android:layout_marginRight="-47dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/mainButton"
+        android:background="@android:color/holo_purple" />
+
 
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#000000"
-        android:layout_above="@id/button"
-        android:layout_alignRight="@id/button" />
+        android:layout_above="@id/mainButton"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="-55dp"
+        android:layout_toRightOf="@id/mainButton"
+        android:background="@android:color/holo_purple" />
+
 
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#000000"
-        android:layout_below="@id/button"
-        android:layout_alignLeft="@id/button" />
+        android:layout_below="@id/mainButton"
+        android:layout_marginTop="-46dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/mainButton"
+        android:background="@android:color/holo_purple" />
 
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#000000"
-        android:layout_below="@id/button"
-        android:layout_alignRight="@id/button" />
+        android:layout_below="@id/mainButton"
+        android:layout_marginLeft="-47dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toRightOf="@id/mainButton"
+        android:background="@android:color/holo_purple" />
+
 </RelativeLayout>
